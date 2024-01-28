@@ -8,15 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        List {
+            Button("Button", action: someBundle)
+            
+            
         }
-        .padding()
+        
     }
+    
+    func someBundle() {
+        print("Button was be pressed")
+        if let fileURL = Bundle.main.url(forResource: "some file name", withExtension: "and extension txt") {
+            print("we found the file in our bundle!")
+            if let fileContents = try? String(contentsOf: fileURL) {
+                print("we loaded the file into a string!")
+            }
+        }
+        
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
