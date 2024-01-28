@@ -9,28 +9,49 @@ import SwiftUI
 
 struct ContentView: View {
     
-
+    @State private var usedWords = [String]()
+    @State private var rootWord = ""
+    @State private var newWord = ""
+    
+    
     
     var body: some View {
         
-        List {
-            Button("Button", action: someBundle)
-            
-            
+        NavigationStack {
+            List {
+                Section {
+                    TextField("Enter your word", text: $newWord).textInputAutocapitalization(.never)
+                }
+                
+                Section {
+                    ForEach(usedWords, id: \.self) { word in
+                        HStack{
+                            Image(systemName: "\(word.count).circle")
+                            Text(word)
+                        }
+                    }
+                }
+            }
+            .onSubmit(addNewWord)
+            .navigationTitle(rootWord)
         }
-        
     }
     
-    func someBundle() {
-        print("Button was be pressed")
-        if let fileURL = Bundle.main.url(forResource: "some file name", withExtension: "and extension txt") {
-            print("we found the file in our bundle!")
-            if let fileContents = try? String(contentsOf: fileURL) {
-                print("we loaded the file into a string!")
-            }
+    func addNewWord() {
+        // lowercase and trim the word, to make sure we don't add duplicate words with case differences
+        let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+
+        // exit if the remaining string is empty
+        guard answer.count > 0 else { return }
+
+        // extra validation to come
+        withAnimation {
+            usedWords.insert(answer, at: 0)
         }
         
+        newWord = ""
     }
+    
     
 }
 
