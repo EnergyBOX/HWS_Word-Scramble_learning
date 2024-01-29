@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F47C47D2B67AB1A0086A6FF /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F47C47C2B67AB1A0086A6FF /* start.txt */; };
 		1FCAB9A62B66CCB000FFDDF4 /* HWS_Word_Scramble_learningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAB9A52B66CCB000FFDDF4 /* HWS_Word_Scramble_learningApp.swift */; };
 		1FCAB9A82B66CCB000FFDDF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAB9A72B66CCB000FFDDF4 /* ContentView.swift */; };
 		1FCAB9AA2B66CCB800FFDDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCAB9A92B66CCB800FFDDF4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F47C47C2B67AB1A0086A6FF /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		1FCAB9A22B66CCB000FFDDF4 /* HWS_Word Scramble_learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HWS_Word Scramble_learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCAB9A52B66CCB000FFDDF4 /* HWS_Word_Scramble_learningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWS_Word_Scramble_learningApp.swift; sourceTree = "<group>"; };
 		1FCAB9A72B66CCB000FFDDF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				1FCAB9A52B66CCB000FFDDF4 /* HWS_Word_Scramble_learningApp.swift */,
 				1FCAB9A72B66CCB000FFDDF4 /* ContentView.swift */,
 				1FCAB9A92B66CCB800FFDDF4 /* Assets.xcassets */,
+				1F47C47C2B67AB1A0086A6FF /* start.txt */,
 				1FCAB9AB2B66CCB800FFDDF4 /* Preview Content */,
 			);
 			path = "HWS_Word Scramble_learning";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FCAB9AD2B66CCB800FFDDF4 /* Preview Assets.xcassets in Resources */,
+				1F47C47D2B67AB1A0086A6FF /* start.txt in Resources */,
 				1FCAB9AA2B66CCB800FFDDF4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
